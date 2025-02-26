@@ -12,3 +12,8 @@ emissionslevelZero <- read_csv("C:/Users/arnav/Documents/CAenviroanalysis/data/l
 
 summary(emissionslevelZero)
 
+emissionslevelZeroprelaw <- filter(emissionslevelZero, Year < 2013)
+
+emissionslevelZeropostlaw <- filter(emissionslevelZero, Year >= 2013
+
+ggplot(data = emissionslevelZero, aes(x="Year", y="Total Included Emissions")) + geom_line()
